@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuPrincipalImg {
+    background-color: rgb(33,37,41);
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.botonMenu {
+    display: none;
+    position: absolute;
+    top: 1.5em;
+    right: 2em;
+    height: 2em;
+    filter: invert(1);
+}
+
+.divMenu {
+    display: inline-block;
+}
+
+.imglogo {
+    height: 85px;
+    width: auto;
+    position: relative;
+}
+
+.menuPrincipal {
+    background-color: rgb(33,37,41);
+    text-align: center;
+}
+
+.menuPrincipal ul {
+    list-style: none;
+}
+
+.menuPrincipal li {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 900;
+}
+
+.menuPrincipal a {
+    line-height: 2.5;
+    text-decoration: none !important;
+    color: #fff;
+}
+
+.menuPrincipal a:hover {
+    color: gray;
+}
+
+.imagenesIndx {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.imagenesIndx p {
+    text-align: center;
+}
+.container{
+    position: relative;
+    z-index: -100;
+}
+
+.carreras img{
+    height:auto;
+    width: 60%;
+    margin-left: 30px;
+}
+@media screen and (min-width:850px) {}
+
+@media screen and (max-width:850px) {
+    .header {
+        max-height: 100px;
+    }
+
+    .botonMenu {
+        display: block;
+    }
+
+    .menuPrincipal {
+        background-color: rgb(33,37,41);
+        text-align: center;
+        transition: all 1.5s;
+        transform: translateY(-800px);
+        position: relative;
+        z-index: -1;
+    }
+
+    .imagenesIndx {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(2, 250fr);
+        grid-template-rows: repeat(6, 250fr);
+    }
+    
+    .imagenesIndx img{
+        width: 80%;
+    }
+    .menuPrincipal-Responsive {
+        transition: all 1.5s;
+        transform: translateY(0px);
+    }
+
+    .menuPrincipal li {
+        display: block;
+    }
+}
